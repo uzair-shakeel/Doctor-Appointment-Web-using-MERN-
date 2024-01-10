@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    section{
+        @apply py-[75px]
+    }
+}
+
+@layer components{
+    .container{
+        @apply max-w-full w-[1440px] lg:px-[80px] mx-auto
+    }
+
+    .btn{
+        @apply bg-Color py-[15px] px-[35px] rounded-[50px] text-white font-[500] mt-[18px]
+    }
+
+    .heading{
+        @apply text-[44px] leading-[54px] font-[700] text-HeadingColor
+    }
+
+    .paragraph{
+        @apply text-[18px] leading-[25px] font-[300] text-HeadingColor mt-[18px]
+    }
+
+    .header{
+        @apply bg-[url('./assets/images/mask.png')] bg-no-repeat bg-center bg-cover w-full h-[100px] leading-[100x]
+    }
+
+    .heroSection{
+        @apply bg-[url('./assets/images/hero-bg.png')] bg-no-repeat bg-center bg-cover 
+    }
+
+    .form_label {
+        @apply text-TextColor font-semibold text-[16px] leading-7 mb-2
+    }
+
+    .form_input {
+        @apply w-full px-4 py-3 border border-solid border-[#0066ff61] focus:outline-none focus:border-Color text-[16px] leading-7 text-HeadingColor placeholder:text-TextColor 
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .container{
+        @apply w-full;
+    }
+    section{
+        @apply py-[35px]
+    }
+}
+
+@media only screen and (max-width:760px) {
+    .heading{
+        @apply text-[26px] leading-[36px];
+    }
+    .paragraph{
+        @apply text-[16px] leading-7 mt-3;
+    }
+}
+
