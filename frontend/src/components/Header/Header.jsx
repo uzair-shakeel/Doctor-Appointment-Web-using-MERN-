@@ -8,7 +8,7 @@ import { AuthContext } from "../../context/authContext";
 
 const navLinks = [
   {
-    path: "/home",
+    path: "/",
     display: "Home",
   },
   {
